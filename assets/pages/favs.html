@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritas</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="shortcut icon" href="/assets/images/Moviestack_favicon.png" type="image/x-icon">
+    <title>MovieStack</title>
+</head>
+<body class="bg-black">
+    <header>
+        <nav class="flex justify-between items-center p-3 shadow-lg bg-black text-cyan-500 ">
+            <h1 class="text-xl ml-3">MOVIESTACK</h1>
+            <ul class="flex space-x-4 font-semibold">
+                <li class="hover:bg-white p-2 rounded-lg zoom-effect"><a href="/index.html">Home</a></li>
+                <li class="hover:bg-white p-2 rounded-lg zoom-effect"><a href="/assets/pages/movies.html">Movies</a></li>
+                <li class="hover:bg-white p-2 rounded-lg zoom-effect"><a href="/assets/pages/favs.html">Favs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner text-center mt-4 pt-5 mb-5 bg-white pb-5 shadow-lg">
+        <img class="w-[80em] h-[18em] m-auto object-cover shadow-xl " src="/assets/images/fav-banner.png" alt="">
+    </section>
+    <div class="flex justify-center gap-4 items-center p-2">
+        <label class="text-white text-center font-bold rounded-md" for="genreSelect">Selecciona un género:</label>
+        
+        <select id="genreSelect" class="font-bold rounded-md" id="genreSelect">
+            <option class="" value="todos">Todos</option>
+        </select>
+        
+        
+        <input type="text" id="searchInput" placeholder="Escriba su pelicula 🔍" class="text-center font-bold rounded-md">
+        </div>
+        <ul id="moviesList">
+            
+        </ul>
+        
+    <h1>Mis Películas Favoritas</h1>
+    <div id="movies-container" class="flex flex-wrap justify-center bg-white"></div>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/funciones.js"></script>
+</body>
+</html>

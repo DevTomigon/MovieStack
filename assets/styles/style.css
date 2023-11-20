@@ -5,3 +5,7 @@
   .zoom-effect:hover {
     transform: scale(1.1);
   }
+
+.background-color{
+ background-image: URL(../images/image.jpg);
+}
