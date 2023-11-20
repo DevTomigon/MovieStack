@@ -9,6 +9,7 @@
     <title>MovieStack</title>
 </head>
 <body class="bg-black">
+    <script type="module" src="/main.js"></script>
     <header>
         <nav class="flex justify-between items-center p-3 shadow-lg bg-black text-cyan-500 ">
             <h1 class="text-xl ml-3">MOVIESTACK</h1>
@@ -24,11 +25,13 @@
     </section>
     <div class="flex justify-center gap-4 items-center p-2">
     <label class="text-white text-center font-bold rounded-md" for="genreSelect">Selecciona un género:</label>
-    <select class="font-bold rounded-md" id="genreSelect" onchange="filterMovies()">
+    
+    <select id="genreSelect" class="font-bold rounded-md" id="genreSelect">
         <option class="" value="todos">Todos</option>
     </select>
     
-    <input type="text" placeholder="Escriba su pelicula 🔍" class="text-center font-bold rounded-md" id="searchInput">
+    
+    <input type="text" id="searchInput" placeholder="Escriba su pelicula 🔍" class="text-center font-bold rounded-md">
     </div>
     <ul id="moviesList">
         
@@ -37,7 +40,7 @@
     <div id="movies-container" class="flex flex-wrap justify-center bg-white"></div>
     <footer class="text-center bg-white p-5 text-cyan-700 font-semibold">Mindhub - Cohort 52</footer>
     <script type="module" src="/main.js"></script>
-    <script type="module" src="/funciones.js"></script>
+    
     <script src="/tailwind.config.js"></script>
 </body>
 </html>

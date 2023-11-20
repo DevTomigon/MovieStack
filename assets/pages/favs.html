@@ -30,9 +30,23 @@
     <section class="banner text-center mt-4 pt-5 mb-5 bg-white pb-5 shadow-lg">
         <img class="w-[80em] h-[18em] m-auto object-cover shadow-xl " src="/assets/images/fav-banner.png" alt="">
     </section>
+    <div class="flex justify-center gap-4 items-center p-2">
+        <label class="text-white text-center font-bold rounded-md" for="genreSelect">Selecciona un género:</label>
+        
+        <select id="genreSelect" class="font-bold rounded-md" id="genreSelect">
+            <option class="" value="todos">Todos</option>
+        </select>
+        
+        
+        <input type="text" id="searchInput" placeholder="Escriba su pelicula 🔍" class="text-center font-bold rounded-md">
+        </div>
+        <ul id="moviesList">
+            
+        </ul>
+        
     <h1>Mis Películas Favoritas</h1>
-  <div id="movies-container" class="flex flex-wrap justify-around"></div>
-  <script type="module" src="main.js"></script>
-  <script type="module" src="funciones.js"></script>
+    <div id="movies-container" class="flex flex-wrap justify-center bg-white"></div>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/funciones.js"></script>
 </body>
 </html>
